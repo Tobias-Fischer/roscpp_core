@@ -10,6 +10,8 @@ catkin_package(
   DEPENDS Boost
 )
 
+add_definitions(-DNOMINMAX)
+
 include_directories(include ${catkin_INCLUDE_DIRS} ${Boost_INCLUDE_DIRS})
 
 add_library(rostime
